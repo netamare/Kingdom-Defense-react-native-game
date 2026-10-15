@@ -1,0 +1,20 @@
+{
+  "expo": {
+    "name": "Kingdom Defense",
+    "slug": "kingdom-defense",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "android": {
+      "package": "com.kingdomdefense.game"
+    },
+    "plugins": [
+      "expo-asset"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "75d14236-13b9-4b21-914c-0fc7e00fbd41"
+      }
+    }
+  }
+}

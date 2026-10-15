@@ -1,0 +1,6 @@
+import React from 'react';
+import {Text,View,TouchableOpacity,StyleSheet} from 'react-native';
+
+export function Stat({i,v,l}:{i:string;v:string|number;l:string}){return <View style={s.stat}><Text style={s.icon}>{i}</Text><View style={s.statCopy}><Text style={s.value}>{v}</Text><Text style={s.label}>{l}</Text></View></View>}
+export function SettingRow({title,detail,value,onPress}:{title:string;detail:string;value:string;onPress:()=>void}){return <TouchableOpacity onPress={onPress} style={s.settingRow}><View><Text style={s.title}>{title}</Text><Text style={s.detail}>{detail}</Text></View><Text style={s.settingValue}>{value}</Text></TouchableOpacity>}
+const s=StyleSheet.create({stat:{flexDirection:'row',alignItems:'center'},icon:{fontSize:16},statCopy:{marginLeft:7},value:{color:'#f4ead5',fontSize:14,fontWeight:'800'},label:{fontSize:8,color:'#91a2a8',letterSpacing:1.2,marginTop:1},settingRow:{flexDirection:'row',alignItems:'center',justifyContent:'space-between',backgroundColor:'#1b2a32',borderWidth:1,borderColor:'#30424a',borderRadius:12,padding:13,marginTop:9},title:{color:'#f4ead5',fontSize:11,fontWeight:'900'},detail:{color:'#91a2a8',fontSize:9,marginTop:4},settingValue:{color:'#f5c66b',fontSize:10,fontWeight:'900'}});
